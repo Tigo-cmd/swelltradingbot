@@ -19,6 +19,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'freckle': ['"Freckle Face"', 'cursive'],
+				'lato': ['Lato', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -58,7 +62,10 @@ export default {
 					navy: 'hsl(var(--swell-navy))',
 					gold: 'hsl(var(--swell-gold))',
 					'dark-gold': 'hsl(var(--swell-dark-gold))',
-				}
+				},
+				navy: '#001F3F',
+				gold: '#BE935A',
+				darkGold: '#674F2E',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -98,6 +105,7 @@ export default {
 			},
 			backgroundImage: {
 				'hero-gradient': 'linear-gradient(to bottom, #f5f5f5, #e5e5e5)',
+				'main-gradient': 'linear-gradient(177.51deg, #D3D3D3 2.01%, #6D6D6D 86.17%)',
 			}
 		}
 	},

@@ -89,26 +89,30 @@
   }
   
   .swell-heading {
-    @apply text-3xl md:text-4xl font-bold text-amber-500;
+    @apply text-3xl md:text-4xl font-bold text-gold font-freckle tracking-wider;
   }
   
   .swell-subheading {
-    @apply text-xl md:text-2xl font-medium text-amber-400;
+    @apply text-xl md:text-2xl font-medium text-amber-400 font-lato;
   }
   
   .swell-paragraph {
-    @apply text-sm md:text-base text-slate-700;
+    @apply text-sm md:text-base text-slate-700 font-lato;
   }
   
   .feature-card {
-    @apply bg-slate-700 rounded-3xl p-6 flex flex-col items-center justify-center text-white;
+    @apply bg-navy/70 rounded-[100px_0px_100px_10px] p-6 flex flex-col items-center justify-center text-white shadow-md;
   }
   
   .nav-link {
-    @apply px-3 py-2 text-sm font-medium hover:text-amber-500 transition-colors;
+    @apply px-3 py-2 text-sm font-medium hover:text-gold transition-colors font-lato font-bold;
   }
   
   .btn-primary {
-    @apply bg-slate-600 hover:bg-slate-700 text-white px-4 py-2 rounded-md transition-colors;
+    @apply bg-navy/50 hover:bg-navy/70 text-white px-4 py-2 rounded-md transition-colors font-lato font-bold;
+  }
+
+  .nav-button {
+    @apply bg-navy/50 hover:bg-navy/70 text-white px-4 py-2 rounded-md transition-colors font-lato font-bold;
   }
 }

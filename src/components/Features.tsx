@@ -6,7 +6,8 @@ import {
   Clock, 
   Settings, 
   Users, 
-  LineChart 
+  LineChart,
+  Bot
 } from 'lucide-react';
 
 const featureItems = [
@@ -44,19 +45,23 @@ const featureItems = [
 
 const Features = () => {
   return (
-    <section id="features" className="py-16 bg-gray-100">
+    <section id="features" className="py-16 bg-gray-500/40">
       <div className="swell-container">
         <div className="text-center mb-12">
-          <h2 className="swell-heading mb-2">Features</h2>
-          <h3 className="swell-subheading mb-4">What can Swell trading <span className="inline-block">🤖</span> do?</h3>
+          <h2 className="text-navy font-freckle text-4xl mb-2">Features</h2>
+          <div className="flex items-center justify-center">
+            <h3 className="text-gold font-lato font-bold text-3xl">What can Swell trading</h3>
+            <Bot size={40} className="text-gold ml-2" />
+            <span className="text-gold font-lato font-bold text-3xl">do?</span>
+          </div>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {featureItems.map((feature, index) => (
             <div key={index} className="feature-card group hover:scale-[1.02] transition-transform">
               <div className="mb-4 text-white">{feature.icon}</div>
-              <h4 className="text-lg font-semibold mb-2">{feature.title}</h4>
-              <p className="text-sm text-gray-200 text-center">{feature.description}</p>
+              <h4 className="text-lg font-lato font-bold mb-2">{feature.title}</h4>
+              <p className="text-sm text-gray-200 text-center font-lato">{feature.description}</p>
             </div>
           ))}
         </div>

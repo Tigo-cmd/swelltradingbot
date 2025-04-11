@@ -4,20 +4,18 @@ import { Button } from '@/components/ui/button';
 
 const About = () => {
   return (
-    <section id="about" className="py-16 bg-white">
+    <section id="about" className="py-16 bg-gray-200/60">
       <div className="swell-container">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0">
-            <h2 className="mb-2 text-slate-800 font-bold text-2xl">About Us</h2>
-            <h3 className="swell-subheading mb-4">
+            <h2 className="mb-4 text-navy font-freckle text-4xl">About Us</h2>
+            <p className="font-lato font-black text-xl md:text-2xl text-gold mb-6 tracking-wide">
               Welcome to Swell Trading Bot, where innovation meets investment!
-            </h3>
-            <p className="swell-paragraph mb-6">
               At Swell, we are passionate about empowering traders of all levels with cutting-edge technology. 
               Our mission is to simplify the trading experience by providing a user-friendly, intelligent trading 
               bot that helps you navigate the complexities of the financial markets.
             </p>
-            <Button className="bg-slate-600 hover:bg-slate-700 text-white">Start Trading</Button>
+            <Button className="btn-primary">Start Trading</Button>
           </div>
           <div className="md:w-1/2 flex justify-center">
             <div className="w-80 h-80 relative">

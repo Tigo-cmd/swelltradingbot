@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -34,21 +35,11 @@
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Custom colors for Swell Trading Bot */
+    --swell-gray: 220 10% 95%;
+    --swell-navy: 215 30% 25%;
+    --swell-gold: 35 80% 65%;
+    --swell-dark-gold: 35 50% 50%;
   }
 
   .dark {
@@ -79,14 +70,6 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
@@ -97,5 +80,35 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .swell-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .swell-heading {
+    @apply text-3xl md:text-4xl font-bold text-amber-500;
+  }
+  
+  .swell-subheading {
+    @apply text-xl md:text-2xl font-medium text-amber-400;
+  }
+  
+  .swell-paragraph {
+    @apply text-sm md:text-base text-slate-700;
+  }
+  
+  .feature-card {
+    @apply bg-slate-700 rounded-3xl p-6 flex flex-col items-center justify-center text-white;
+  }
+  
+  .nav-link {
+    @apply px-3 py-2 text-sm font-medium hover:text-amber-500 transition-colors;
+  }
+  
+  .btn-primary {
+    @apply bg-slate-600 hover:bg-slate-700 text-white px-4 py-2 rounded-md transition-colors;
   }
 }

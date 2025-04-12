@@ -49,10 +49,10 @@ const Features = () => {
       <div className="swell-container">
         <div className="text-center mb-12">
           <h2 className="text-navy font-freckle text-4xl mb-2">Features</h2>
-          <div className="flex items-center justify-center">
-            <h3 className="text-gold font-lato font-bold text-3xl">What can Swell trading</h3>
-            <Bot size={40} className="text-gold ml-2" />
-            <span className="text-gold font-lato font-bold text-3xl">do?</span>
+          <div className="flex flex-wrap items-center justify-center">
+            <h3 className="text-gold font-lato font-bold text-xl sm:text-2xl md:text-3xl">What can Swell trading</h3>
+            <Bot size={40} className="text-gold mx-2" />
+            <span className="text-gold font-lato font-bold text-xl sm:text-2xl md:text-3xl">do?</span>
           </div>
         </div>
         

@@ -6,10 +6,10 @@ const About = () => {
   return (
     <section id="about" className="py-16 bg-gray-200/60 relative">
       {/* Rounded shape at the top */}
-      <div className="absolute top-0 left-0 right-0 h-12 bg-gray-200/60" style={{ 
+      <div className="absolute top-0 left-0 right-0 h-20 bg-gray-200/60" style={{ 
         borderTopLeftRadius: '50% 100%', 
         borderTopRightRadius: '50% 100%', 
-        transform: 'translateY(-100%)' 
+        transform: 'translateY(-90%)' 
       }}></div>
       
       <div className="swell-container">

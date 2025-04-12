@@ -4,7 +4,14 @@ import { Button } from '@/components/ui/button';
 
 const About = () => {
   return (
-    <section id="about" className="py-16 bg-gray-200/60">
+    <section id="about" className="py-16 bg-gray-200/60 relative">
+      {/* Rounded shape at the top */}
+      <div className="absolute top-0 left-0 right-0 h-12 bg-gray-200/60" style={{ 
+        borderTopLeftRadius: '50% 100%', 
+        borderTopRightRadius: '50% 100%', 
+        transform: 'translateY(-100%)' 
+      }}></div>
+      
       <div className="swell-container">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0">

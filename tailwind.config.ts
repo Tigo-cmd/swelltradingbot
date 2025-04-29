@@ -64,7 +64,7 @@ export default {
 					'dark-gold': 'hsl(var(--swell-dark-gold))',
 				},
 				navy: '#001F3F',
-				gold: '#BE935A',
+				gold: '#FF4500',
 				darkGold: '#674F2E',
 			},
 			borderRadius: {
@@ -106,6 +106,7 @@ export default {
 			backgroundImage: {
 				'hero-gradient': 'linear-gradient(to bottom, #f5f5f5, #e5e5e5)',
 				'main-gradient': 'linear-gradient(177.51deg, #D3D3D3 2.01%, #6D6D6D 86.17%)',
+				'main-gradient-reverse': 'linear-gradient(357.51deg, #D3D3D3 2.01%, #6D6D6D 86.17%)',
 			}
 		}
 	},

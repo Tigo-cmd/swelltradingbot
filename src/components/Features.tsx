@@ -45,14 +45,14 @@ const featureItems = [
 
 const Features = () => {
   return (
-    <section id="features" className="py-16 bg-gray-500/40">
+    <section id="features" className="py-16 bg-main-gradient">
       <div className="swell-container">
         <div className="text-center mb-12">
           <h2 className="text-navy font-freckle text-4xl mb-2">Features</h2>
           <div className="flex flex-wrap items-center justify-center">
-            <h3 className="text-gold font-lato font-bold text-xl sm:text-2xl md:text-3xl">What can Swell trading</h3>
+            <h3 className="text-darkGold font-lato font-bold text-xl sm:text-2xl md:text-3xl">What can Swell trading</h3>
             <Bot size={40} className="text-gold mx-2" />
-            <span className="text-gold font-lato font-bold text-xl sm:text-2xl md:text-3xl">do?</span>
+            <span className="text-darkGold font-lato font-bold text-xl sm:text-2xl md:text-3xl">do?</span>
           </div>
         </div>
         

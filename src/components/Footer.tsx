@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { Bot } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -10,9 +9,8 @@ const Footer = () => {
           <div className="mb-4 md:mb-0">
             <div className="flex items-center justify-center md:justify-start mb-2">
               <div className="h-10 w-10 bg-gold/10 rounded-md flex items-center justify-center border border-gold/30">
-                <Bot size={20} className="text-gold" />
+                <img src="/uploads/Group1.png" alt="bot image" />
               </div>
-              <span className="ml-2 font-bold text-gold text-xl font-freckle">STB</span>
             </div>
             <p className="text-sm text-gray-400 font-lato">© 2025 Swell Trading Bot. All rights reserved.</p>
           </div>
@@ -21,18 +19,16 @@ const Footer = () => {
             <div>
               <h5 className="font-semibold mb-3 text-gray-300 font-lato">Product</h5>
               <ul className="space-y-2 text-sm font-lato">
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Features</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Pricing</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Documentation</a></li>
+                <li><a href="#features" className="text-gray-400 hover:text-white transition-colors">Features</a></li>
+                <li><a href="https://swelltradingbot.gitbook.io/docs" target='_blank' className="text-gray-400 hover:text-white transition-colors">Documentation</a></li>
               </ul>
             </div>
-            
+            k
             <div>
               <h5 className="font-semibold mb-3 text-gray-300 font-lato">Company</h5>
               <ul className="space-y-2 text-sm font-lato">
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">About</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Careers</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                <li><a href="#about" className="text-gray-400 hover:text-white transition-colors">About</a></li>
+                <li><a href="https://www.swellnetwork.io/blog" target='-blank' className="text-gray-400 hover:text-white transition-colors">Blog</a></li>
               </ul>
             </div>
             

@@ -56,8 +56,8 @@ const Features = () => {
             <Bot size={40} className="text-gold mx-2" />
             <span className="text-darkGold font-lato font-bold text-xl sm:text-2xl md:text-3xl">do?</span>
           </div>
-          </FadeInWhenVisible>
         </div>
+        </FadeInWhenVisible>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {featureItems.map((feature, index) => (

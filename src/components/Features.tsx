@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { 
   BarChartHorizontal, 
@@ -9,6 +8,7 @@ import {
   LineChart,
   Bot
 } from 'lucide-react';
+import FadeInSlide from "@/components/FadeInSlide";
 
 const featureItems = [
   {
@@ -55,14 +55,16 @@ const Features = () => {
             <span className="text-darkGold font-lato font-bold text-xl sm:text-2xl md:text-3xl">do?</span>
           </div>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {featureItems.map((feature, index) => (
-            <div key={index} className="feature-card group hover:scale-[1.02] transition-transform">
-              <div className="mb-4 text-white">{feature.icon}</div>
-              <h4 className="text-lg font-lato font-bold mb-2">{feature.title}</h4>
-              <p className="text-sm text-gray-200 text-center font-lato">{feature.description}</p>
-            </div>
+            <FadeInSlide key={index} direction={index % 2 === 0 ? "left" : "right"}>
+              <div className="feature-card group hover:scale-[1.02] transition-transform">
+                <div className="mb-4 text-white">{feature.icon}</div>
+                <h4 className="text-lg font-lato font-bold mb-2">{feature.title}</h4>
+                <p className="text-sm text-gray-200 text-center font-lato">{feature.description}</p>
+              </div>
+            </FadeInSlide>
           ))}
         </div>
       </div>

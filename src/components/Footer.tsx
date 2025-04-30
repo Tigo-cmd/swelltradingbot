@@ -23,12 +23,11 @@ const Footer = () => {
                 <li><a href="https://swelltradingbot.gitbook.io/docs" target='_blank' className="text-gray-400 hover:text-white transition-colors">Documentation</a></li>
               </ul>
             </div>
-            k
             <div>
               <h5 className="font-semibold mb-3 text-gray-300 font-lato">Company</h5>
               <ul className="space-y-2 text-sm font-lato">
                 <li><a href="#about" className="text-gray-400 hover:text-white transition-colors">About</a></li>
-                <li><a href="https://www.swellnetwork.io/blog" target='-blank' className="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                <li><a href="https://www.swellnetwork.io/blog" target='_blank' className="text-gray-400 hover:text-white transition-colors">Blog</a></li>
               </ul>
             </div>
             

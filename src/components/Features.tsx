@@ -9,6 +9,7 @@ import {
   Bot
 } from 'lucide-react';
 import FadeInSlide from "@/components/FadeInSlide";
+import FadeInWhenVisible from "@/components/Fadeinwhenvisible";
 
 const featureItems = [
   {
@@ -47,6 +48,7 @@ const Features = () => {
   return (
     <section id="features" className="py-16 bg-main-gradient">
       <div className="swell-container">
+        <FadeInWhenVisible>
         <div className="text-center mb-12">
           <h2 className="text-navy font-freckle text-4xl mb-2">Features</h2>
           <div className="flex flex-wrap items-center justify-center">
@@ -55,6 +57,7 @@ const Features = () => {
             <span className="text-darkGold font-lato font-bold text-xl sm:text-2xl md:text-3xl">do?</span>
           </div>
         </div>
+        </FadeInWhenVisible>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {featureItems.map((feature, index) => (
